@@ -1,0 +1,1230 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#202225">
+  <meta name="description" content="Bài luyện Aptis General Vocabulary B1–B2 gồm 100 câu, chia 5 phần và chấm điểm tức thì.">
+  <title>POP APTIS TEST · Vocabulary 100</title>
+  <style>
+    :root {
+      --ink: #111214;
+      --matte: #202225;
+      --paper: #f7f3e8;
+      --paper-2: #fffdf8;
+      --yellow: #ffd84a;
+      --lime: #c8ff46;
+      --cyan: #65e7ff;
+      --pink: #ff4fa3;
+      --violet: #b99cff;
+      --green: #48df89;
+      --red: #ff6464;
+      --muted: #6d6d68;
+      --shadow: 6px 6px 0 #0c0d0e;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      min-width: 320px;
+      color: #fff;
+      background:
+        radial-gradient(circle at 12% 10%, rgba(101, 231, 255, .11), transparent 25rem),
+        radial-gradient(circle at 88% 22%, rgba(255, 79, 163, .10), transparent 24rem),
+        var(--matte);
+      font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      font-size: 16px;
+    }
+
+    button, select { font: inherit; }
+    button, select { touch-action: manipulation; }
+
+    .app {
+      width: min(1080px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 18px 0 112px;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 10px;
+      z-index: 20;
+      border: 2px solid #000;
+      background: rgba(20, 21, 23, .96);
+      box-shadow: 5px 5px 0 #000;
+      backdrop-filter: blur(12px);
+    }
+
+    .toprow {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      gap: 18px;
+      padding: 12px 14px 10px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 0;
+    }
+
+    .logo {
+      display: grid;
+      place-items: center;
+      width: 50px;
+      height: 50px;
+      flex: 0 0 auto;
+      color: var(--ink);
+      background: var(--lime);
+      border: 2px solid #000;
+      box-shadow: 3px 3px 0 var(--cyan);
+      font-weight: 1000;
+      letter-spacing: -1px;
+    }
+
+    .brandname {
+      font-size: clamp(1rem, 2.2vw, 1.35rem);
+      font-weight: 1000;
+      letter-spacing: .025em;
+    }
+
+    .brandsub {
+      margin-top: 2px;
+      color: #bfc1c7;
+      font-size: .78rem;
+      font-weight: 750;
+    }
+
+    .scorepill {
+      min-width: 88px;
+      padding: 8px 10px;
+      color: var(--ink);
+      background: var(--yellow);
+      border: 2px solid #000;
+      box-shadow: 3px 3px 0 #000;
+      text-align: center;
+      font-size: 1rem;
+      font-weight: 1000;
+    }
+
+    .progress-wrap {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      gap: 12px;
+      padding: 0 14px 12px;
+    }
+
+    .progress-track {
+      height: 12px;
+      overflow: hidden;
+      border: 2px solid #000;
+      background: #f5f5f2;
+    }
+
+    .progress-bar {
+      width: 0;
+      height: 100%;
+      background: linear-gradient(90deg, var(--pink), var(--yellow), var(--lime));
+      transition: width .25s ease;
+    }
+
+    .progress-text {
+      color: #e6e6e6;
+      font-size: .78rem;
+      font-weight: 900;
+      white-space: nowrap;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      align-items: end;
+      gap: 20px;
+      padding: 42px 2px 24px;
+    }
+
+    .kicker {
+      display: inline-block;
+      padding: 6px 10px;
+      color: var(--ink);
+      background: var(--cyan);
+      border: 2px solid #000;
+      box-shadow: 3px 3px 0 #000;
+      font-size: .76rem;
+      font-weight: 1000;
+      letter-spacing: .08em;
+    }
+
+    h1 {
+      max-width: 720px;
+      margin: 14px 0 0;
+      font-size: clamp(2.25rem, 8vw, 5rem);
+      line-height: .92;
+      letter-spacing: -.065em;
+      text-transform: uppercase;
+    }
+
+    h1 span { color: var(--yellow); }
+
+    .hero-meta {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(96px, 1fr));
+      gap: 8px;
+    }
+
+    .meta {
+      padding: 10px 12px;
+      color: var(--ink);
+      background: var(--paper);
+      border: 2px solid #000;
+      box-shadow: 3px 3px 0 #000;
+    }
+
+    .meta strong {
+      display: block;
+      font-size: 1.15rem;
+      font-weight: 1000;
+    }
+
+    .meta small {
+      display: block;
+      margin-top: 2px;
+      color: #444;
+      font-weight: 750;
+    }
+
+    .navigator {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 9px;
+      margin-bottom: 16px;
+    }
+
+    .navchip,
+    .action,
+    .dock-btn,
+    .option-btn {
+      cursor: pointer;
+      border: 2px solid #000;
+      border-radius: 0;
+      font-weight: 950;
+    }
+
+    .navchip {
+      min-height: 58px;
+      padding: 9px 10px;
+      color: #efefef;
+      background: #33363a;
+      box-shadow: 4px 4px 0 #000;
+      text-align: left;
+    }
+
+    .navchip:hover,
+    .navchip:focus-visible { transform: translate(-1px, -1px); }
+
+    .navchip.active {
+      color: var(--ink);
+      background: var(--yellow);
+    }
+
+    .navchip small {
+      display: block;
+      margin-top: 4px;
+      color: inherit;
+      opacity: .74;
+      font-size: .7rem;
+    }
+
+    .page-head {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 18px;
+      margin: 22px 2px 12px;
+    }
+
+    .page-label {
+      color: var(--cyan);
+      font-size: .78rem;
+      font-weight: 1000;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .page-title {
+      margin: 4px 0 0;
+      font-size: clamp(1.55rem, 4vw, 2.6rem);
+      letter-spacing: -.04em;
+      text-transform: uppercase;
+    }
+
+    .page-answered {
+      padding: 7px 9px;
+      color: var(--ink);
+      background: var(--violet);
+      border: 2px solid #000;
+      box-shadow: 3px 3px 0 #000;
+      font-size: .82rem;
+      font-weight: 1000;
+      white-space: nowrap;
+    }
+
+    .paper {
+      margin-bottom: 18px;
+      padding: 26px 28px;
+      color: var(--ink);
+      background: var(--paper-2);
+      border: 2px solid var(--ink);
+      box-shadow: var(--shadow);
+    }
+
+    .intro-grid {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 18px;
+      align-items: start;
+    }
+
+    .task-title {
+      margin: 0;
+      font-size: clamp(1.4rem, 3vw, 2rem);
+      letter-spacing: -.035em;
+    }
+
+    .instruction {
+      max-width: 780px;
+      margin: 9px 0 0;
+      color: #3d3d3a;
+      line-height: 1.65;
+    }
+
+    .time-badge {
+      min-width: 104px;
+      padding: 10px;
+      color: var(--ink);
+      background: var(--lime);
+      border: 2px solid #000;
+      box-shadow: 3px 3px 0 #000;
+      text-align: center;
+      font-size: .8rem;
+      font-weight: 1000;
+    }
+
+    .legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin-top: 18px;
+    }
+
+    .legend span,
+    .type-tag {
+      display: inline-flex;
+      align-items: center;
+      min-height: 28px;
+      padding: 5px 8px;
+      border: 1.5px solid #000;
+      font-size: .72rem;
+      font-weight: 950;
+      text-transform: uppercase;
+    }
+
+    .type-definition { background: var(--cyan); }
+    .type-synonym { background: var(--violet); }
+    .type-usage { background: var(--yellow); }
+    .type-collocation { background: var(--pink); }
+
+    .question-list {
+      display: grid;
+      gap: 15px;
+    }
+
+    .question-card {
+      position: relative;
+      padding: 22px 24px;
+      color: var(--ink);
+      background: var(--paper-2);
+      border: 2px solid #111;
+      box-shadow: 5px 5px 0 #0c0d0e;
+      transition: transform .16s ease, background .16s ease;
+    }
+
+    .question-card.correct { background: #e8ffef; }
+    .question-card.wrong { background: #fff0f0; }
+
+    .question-top {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .qnum {
+      display: grid;
+      place-items: center;
+      width: 38px;
+      height: 38px;
+      color: #fff;
+      background: var(--ink);
+      border: 2px solid #000;
+      font-weight: 1000;
+    }
+
+    .question {
+      margin: 17px 0 14px;
+      font-size: clamp(1.05rem, 2.4vw, 1.28rem);
+      font-weight: 850;
+      line-height: 1.45;
+    }
+
+    .answer-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .answer-select {
+      width: 100%;
+      min-height: 48px;
+      padding: 9px 38px 9px 12px;
+      color: var(--ink);
+      background: #fff;
+      border: 2px solid #111;
+      border-radius: 0;
+      font-weight: 800;
+    }
+
+    .answer-select:focus {
+      outline: 3px solid var(--cyan);
+      outline-offset: 2px;
+    }
+
+    .mark {
+      display: none;
+      min-width: 42px;
+      height: 42px;
+      place-items: center;
+      border: 2px solid #000;
+      font-size: 1.15rem;
+      font-weight: 1000;
+    }
+
+    .question-card.correct .mark {
+      display: grid;
+      background: var(--green);
+    }
+
+    .question-card.wrong .mark {
+      display: grid;
+      background: var(--red);
+    }
+
+    .feedback {
+      display: none;
+      margin-top: 13px;
+      padding: 10px 12px;
+      border-left: 5px solid #111;
+      background: rgba(255, 255, 255, .75);
+      font-size: .9rem;
+      line-height: 1.5;
+    }
+
+    .question-card.correct .feedback,
+    .question-card.wrong .feedback { display: block; }
+
+    .feedback strong { font-weight: 1000; }
+
+    .dossier {
+      margin-top: 18px;
+      padding: 22px 24px;
+      color: var(--ink);
+      background: var(--paper);
+      border: 2px solid #000;
+      box-shadow: var(--shadow);
+    }
+
+    .dossier-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .dossier h3 {
+      margin: 0;
+      font-size: 1.25rem;
+      text-transform: uppercase;
+    }
+
+    .mini-score {
+      padding: 5px 8px;
+      background: var(--yellow);
+      border: 2px solid #000;
+      font-weight: 1000;
+    }
+
+    .answer-map {
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+      gap: 7px;
+      margin-top: 14px;
+    }
+
+    .answer-dot {
+      display: grid;
+      place-items: center;
+      min-height: 34px;
+      border: 2px solid #000;
+      background: #fff;
+      font-size: .76rem;
+      font-weight: 1000;
+    }
+
+    .answer-dot.correct { background: var(--green); }
+    .answer-dot.wrong { background: var(--red); }
+
+    .page-actions,
+    .summary-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .action {
+      min-height: 46px;
+      padding: 10px 16px;
+      color: var(--ink);
+      background: #fff;
+      box-shadow: 4px 4px 0 #000;
+      text-transform: uppercase;
+    }
+
+    .action.primary { background: var(--lime); }
+    .action.pink { background: var(--pink); }
+    .action.violet { background: var(--violet); }
+    .action:disabled { cursor: not-allowed; opacity: .45; }
+
+    .action:hover:not(:disabled),
+    .action:focus-visible,
+    .dock-btn:hover,
+    .dock-btn:focus-visible {
+      transform: translate(-1px, -1px);
+    }
+
+    .summary,
+    .review { display: none; }
+
+    .summary.active,
+    .review.active { display: block; }
+
+    .big-score {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 24px;
+      align-items: center;
+      margin-top: 18px;
+    }
+
+    .score-disc {
+      display: grid;
+      place-items: center;
+      width: 152px;
+      height: 152px;
+      color: var(--ink);
+      background: var(--yellow);
+      border: 3px solid #000;
+      box-shadow: 7px 7px 0 #000;
+      font-size: 2.15rem;
+      font-weight: 1000;
+    }
+
+    .score-copy h3 {
+      margin: 0 0 7px;
+      font-size: clamp(1.6rem, 4vw, 2.65rem);
+      text-transform: uppercase;
+    }
+
+    .score-copy p {
+      margin: 0;
+      color: #444;
+      line-height: 1.55;
+    }
+
+    .summary-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-top: 22px;
+    }
+
+    .stat {
+      padding: 14px;
+      background: #fff;
+      border: 2px solid #000;
+      text-align: center;
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 1.45rem;
+      font-weight: 1000;
+    }
+
+    .stat small {
+      color: #555;
+      font-weight: 750;
+    }
+
+    .review-list {
+      display: grid;
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .review-item {
+      padding: 16px;
+      background: #fff;
+      border: 2px solid #000;
+    }
+
+    .review-item h4 {
+      margin: 0 0 8px;
+      line-height: 1.45;
+    }
+
+    .review-item p {
+      margin: 4px 0;
+      color: #444;
+      line-height: 1.5;
+    }
+
+    .footer-dock {
+      position: fixed;
+      z-index: 30;
+      left: 50%;
+      bottom: 14px;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(92px, 1fr));
+      width: min(600px, calc(100% - 28px));
+      transform: translateX(-50%);
+      border: 2px solid #000;
+      box-shadow: 5px 5px 0 #000;
+    }
+
+    .dock-btn {
+      min-height: 52px;
+      padding: 10px;
+      color: #fff;
+      background: #34373b;
+      border-width: 0 1px;
+      text-transform: uppercase;
+    }
+
+    .dock-btn:first-child { border-left: 0; }
+    .dock-btn:last-child { border-right: 0; }
+    .dock-btn.accent {
+      color: var(--ink);
+      background: var(--yellow);
+    }
+
+    .source-note {
+      margin: 22px 0 0;
+      color: #b8bbc2;
+      font-size: .78rem;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    @media (max-width: 760px) {
+      .app { width: min(100% - 20px, 1080px); padding-top: 10px; }
+      .topbar { top: 6px; }
+      .hero { grid-template-columns: 1fr; padding-top: 30px; }
+      .hero-meta { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+      .meta { padding: 8px; }
+      .meta strong { font-size: .95rem; }
+      .meta small { font-size: .65rem; }
+      .navigator { grid-template-columns: repeat(2, 1fr); }
+      .navigator .navchip:last-child { grid-column: 1 / -1; }
+      .paper, .question-card, .dossier { padding: 20px 17px; }
+      .intro-grid { grid-template-columns: 1fr; }
+      .time-badge { justify-self: start; }
+      .answer-map { grid-template-columns: repeat(5, 1fr); }
+      .big-score { grid-template-columns: 1fr; }
+      .score-disc { width: 124px; height: 124px; }
+    }
+
+    @media (max-width: 480px) {
+      .toprow { grid-template-columns: 1fr auto; gap: 8px; }
+      .logo { width: 44px; height: 44px; }
+      .brandsub { display: none; }
+      .scorepill { min-width: 68px; padding-inline: 7px; }
+      .hero-meta { grid-template-columns: repeat(2, 1fr); }
+      .page-head { align-items: flex-start; }
+      .question-top { grid-template-columns: auto 1fr; }
+      .question-top .type-tag { grid-column: 2; justify-self: start; }
+      .answer-row { grid-template-columns: 1fr; }
+      .mark { justify-self: end; }
+      .summary-stats { grid-template-columns: 1fr; }
+      .page-actions { justify-content: stretch; }
+      .page-actions .action { flex: 1 1 100%; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      * { transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <section class="topbar" aria-label="Tiến độ bài thi">
+      <div class="toprow">
+        <div class="brand">
+          <div class="logo" aria-hidden="true">V100</div>
+          <div>
+            <div class="brandname">POP APTIS TEST</div>
+            <div class="brandsub">Vocabulary · General B1–B2 · 100 Questions</div>
+          </div>
+        </div>
+        <div class="scorepill" id="scorePill">0/0</div>
+      </div>
+      <div class="progress-wrap">
+        <div class="progress-track" aria-hidden="true"><div class="progress-bar" id="progressBar"></div></div>
+        <div class="progress-text" id="progressText">0 / 100</div>
+      </div>
+    </section>
+
+    <section class="hero">
+      <div>
+        <span class="kicker">APTIS GENERAL · B1–B2</span>
+        <h1>Vocabulary<br><span>Test Lab</span></h1>
+      </div>
+      <div class="hero-meta" aria-label="Thông tin bài luyện">
+        <div class="meta"><strong>5</strong><small>practice sets</small></div>
+        <div class="meta"><strong>100</strong><small>questions</small></div>
+        <div class="meta"><strong>Instant</strong><small>marking</small></div>
+        <div class="meta"><strong>EN–VI</strong><small>explanations</small></div>
+      </div>
+    </section>
+
+    <nav class="navigator" id="navigator" aria-label="Chọn phần bài thi"></nav>
+
+    <main>
+      <section id="testView">
+        <div class="page-head">
+          <div>
+            <div class="page-label" id="pageLabel">Vocabulary Set 1</div>
+            <h2 class="page-title" id="pageTitle">Core Foundations</h2>
+          </div>
+          <div class="page-answered" id="pageAnswered">0/20 answered</div>
+        </div>
+
+        <article class="paper">
+          <div class="intro-grid">
+            <div>
+              <h2 class="task-title">Aptis Vocabulary Practice</h2>
+              <p class="instruction">Choose the best answer for each question. This practice set follows the four common Aptis vocabulary task families: word definitions, word pairs, word usage and word combinations. Mỗi lựa chọn được chấm ngay và có giải thích tiếng Việt.</p>
+            </div>
+            <div class="time-badge">TARGET<br>10–12 MIN</div>
+          </div>
+          <div class="legend" aria-label="Dạng câu hỏi">
+            <span class="type-definition">Definition</span>
+            <span class="type-synonym">Word pair</span>
+            <span class="type-usage">Word usage</span>
+            <span class="type-collocation">Combination</span>
+          </div>
+        </article>
+
+        <div class="question-list" id="questionList"></div>
+
+        <section class="dossier">
+          <div class="dossier-head">
+            <h3>Answer dossier</h3>
+            <div class="mini-score" id="miniScore">0/20</div>
+          </div>
+          <div class="answer-map" id="answerMap"></div>
+        </section>
+
+        <div class="page-actions">
+          <button class="action" id="prevPage">← Prev</button>
+          <button class="action pink" id="resetPage">Reset page</button>
+          <button class="action primary" id="nextPage">Next →</button>
+        </div>
+      </section>
+
+      <section class="summary paper" id="summaryView" aria-live="polite">
+        <div class="page-label">Overall result</div>
+        <h2 class="page-title">Your vocabulary score</h2>
+        <div class="big-score">
+          <div class="score-disc" id="bigScore">0/100</div>
+          <div class="score-copy">
+            <h3 id="scoreMessage">Keep going</h3>
+            <p id="scoreDescription"></p>
+          </div>
+        </div>
+        <div class="summary-stats">
+          <div class="stat"><strong id="correctStat">0</strong><small>Correct</small></div>
+          <div class="stat"><strong id="wrongStat">0</strong><small>Wrong</small></div>
+          <div class="stat"><strong id="blankStat">100</strong><small>Unanswered</small></div>
+        </div>
+        <div class="summary-actions">
+          <button class="action" id="backToTest">Back to test</button>
+          <button class="action violet" id="reviewWrong">Review wrong</button>
+          <button class="action pink" id="resetAll">Reset all</button>
+        </div>
+      </section>
+
+      <section class="review paper" id="reviewView">
+        <div class="page-label">Personal dossier</div>
+        <h2 class="page-title">Review wrong & unanswered</h2>
+        <p class="instruction">Tập trung vào các câu sai hoặc chưa làm. Mỗi mục hiển thị đáp án của bạn, đáp án đúng và lý do ngắn gọn.</p>
+        <div class="review-list" id="reviewList"></div>
+        <div class="summary-actions">
+          <button class="action primary" id="reviewBack">Back to result</button>
+        </div>
+      </section>
+
+      <p class="source-note">Independent Aptis-style practice material. This is not an official British Council test.</p>
+    </main>
+  </div>
+
+  <div class="footer-dock" aria-label="Điều hướng nhanh">
+    <button class="dock-btn" id="dockPrev">← Prev</button>
+    <button class="dock-btn accent" id="dockScore">Score</button>
+    <button class="dock-btn" id="dockNext">Next →</button>
+  </div>
+
+  <script>
+    const SETS = [
+      {
+        title: "Core Foundations",
+        subtitle: "Trust · accuracy · everyday action",
+        questions: [
+          {t:"definition",q:"Which word means “able to be trusted or depended on”?",o:["ordinary","reliable","nervous","narrow"],a:1,e:"Reliable nghĩa là đáng tin cậy, có thể tin tưởng hoặc dựa vào."},
+          {t:"definition",q:"Which word means “a result or effect of an action or event”?",o:["consequence","permission","occasion","advantage"],a:0,e:"Consequence là hậu quả hoặc kết quả phát sinh từ một hành động hay sự kiện."},
+          {t:"definition",q:"Which word means “to make pain or a problem less severe”?",o:["measure","require","relieve","predict"],a:2,e:"Relieve nghĩa là làm giảm đau, giảm áp lực hoặc khiến vấn đề bớt nghiêm trọng."},
+          {t:"definition",q:"Which word describes someone who is unwilling to change their opinion?",o:["generous","anxious","flexible","stubborn"],a:3,e:"Stubborn nghĩa là bướng bỉnh, không sẵn lòng thay đổi quan điểm."},
+          {t:"definition",q:"Which word means “a temporary stop in an activity or process”?",o:["instruction","interruption","improvement","intention"],a:1,e:"Interruption là sự gián đoạn, tức một hoạt động tạm thời bị dừng."},
+          {t:"synonym",q:"Choose the word closest in meaning to “purchase”.",o:["buy","lend","repair","deliver"],a:0,e:"Purchase và buy đều có nghĩa là mua."},
+          {t:"synonym",q:"Choose the word closest in meaning to “accurate”.",o:["patient","familiar","precise","general"],a:2,e:"Accurate và precise đều diễn tả sự chính xác."},
+          {t:"synonym",q:"Choose the word closest in meaning to “rarely”.",o:["nearly","quietly","recently","seldom"],a:3,e:"Rarely và seldom đều có nghĩa là hiếm khi."},
+          {t:"synonym",q:"Choose the word closest in meaning to “permit”.",o:["prevent","allow","expect","refuse"],a:1,e:"Permit và allow đều có nghĩa là cho phép."},
+          {t:"synonym",q:"Choose the word closest in meaning to “enormous”.",o:["huge","empty","ancient","useful"],a:0,e:"Enormous và huge đều có nghĩa là rất lớn, khổng lồ."},
+          {t:"usage",q:"Please ___ attention to the safety instructions.",o:["give","make","do","pay"],a:3,e:"Cụm đúng là pay attention: chú ý đến điều gì."},
+          {t:"usage",q:"She gained valuable work ___ during her internship.",o:["experiment","experience","explanation","expression"],a:1,e:"Work experience nghĩa là kinh nghiệm làm việc."},
+          {t:"usage",q:"The match was cancelled because of ___ rain.",o:["heavy","hard","firm","sharp"],a:0,e:"Heavy rain là cách kết hợp tự nhiên để nói mưa lớn."},
+          {t:"usage",q:"After hours of discussion, they finally ___ a decision.",o:["caught","won","reached","arrived"],a:2,e:"Reach a decision nghĩa là đi đến hoặc đạt được một quyết định."},
+          {t:"usage",q:"The meeting was ___ until Friday because the manager was ill.",o:["removed","avoided","prevented","postponed"],a:3,e:"Postponed nghĩa là được hoãn sang một thời điểm muộn hơn."},
+          {t:"collocation",q:"Choose the word that completes the common combination: “___ responsibility”.",o:["make","take","do","set"],a:1,e:"Take responsibility nghĩa là nhận trách nhiệm."},
+          {t:"collocation",q:"Choose the word that completes the common combination: “___ qualified”.",o:["deeply","widely","highly","closely"],a:2,e:"Highly qualified nghĩa là có trình độ hoặc năng lực chuyên môn cao."},
+          {t:"collocation",q:"Choose the word that completes the common combination: “___ progress”.",o:["make","take","bring","put"],a:0,e:"Make progress nghĩa là đạt được tiến bộ."},
+          {t:"collocation",q:"Choose the word that completes the common combination: “___ a deadline”.",o:["hold","catch","keep","meet"],a:3,e:"Meet a deadline nghĩa là hoàn thành công việc đúng hạn."},
+          {t:"collocation",q:"Choose the word that completes the common combination: “___ evidence”.",o:["deep","strong","hard","high"],a:1,e:"Strong evidence nghĩa là bằng chứng thuyết phục hoặc vững chắc."}
+        ]
+      },
+      {
+        title: "Work & Decisions",
+        subtitle: "Agreements · research · formal English",
+        questions: [
+          {t:"definition",q:"Which word means “to become or make something smaller in amount or size”?",o:["decrease","extend","replace","improve"],a:0,e:"Decrease nghĩa là giảm xuống hoặc làm cho nhỏ đi về số lượng hay kích thước."},
+          {t:"definition",q:"Which word describes someone who has enough skill or knowledge to do something well?",o:["curious","competent","fortunate","sensitive"],a:1,e:"Competent nghĩa là có đủ năng lực, kỹ năng hoặc kiến thức."},
+          {t:"definition",q:"Which word means “a formal agreement, especially in business or employment”?",o:["contact","context","contract","contrast"],a:2,e:"Contract là hợp đồng hoặc thỏa thuận chính thức."},
+          {t:"definition",q:"Which word means “to stop something from happening”?",o:["prepare","provide","protect","prevent"],a:3,e:"Prevent nghĩa là ngăn một việc xảy ra."},
+          {t:"definition",q:"Which word describes something that may change suddenly and cannot be expected?",o:["unpredictable","unavailable","unnecessary","uncomfortable"],a:0,e:"Unpredictable nghĩa là khó đoán, có thể thay đổi bất ngờ."},
+          {t:"synonym",q:"Choose the word closest in meaning to “assist”.",o:["hide","help","warn","follow"],a:1,e:"Assist và help đều có nghĩa là giúp đỡ."},
+          {t:"synonym",q:"Choose the word closest in meaning to “obvious”.",o:["silent","formal","clear","weak"],a:2,e:"Obvious và clear đều có thể diễn tả điều rõ ràng, dễ nhận thấy."},
+          {t:"synonym",q:"Choose the word closest in meaning to “reject”.",o:["receive","repeat","record","refuse"],a:3,e:"Reject và refuse đều mang nghĩa từ chối hoặc không chấp nhận."},
+          {t:"synonym",q:"Choose the word closest in meaning to “frequent”.",o:["regular","expensive","recent","formal"],a:0,e:"Frequent gần nghĩa với regular trong ngữ cảnh một việc xảy ra thường xuyên."},
+          {t:"synonym",q:"Choose the word closest in meaning to “respond”.",o:["remove","reply","review","return"],a:1,e:"Respond và reply đều có nghĩa là trả lời hoặc phản hồi."},
+          {t:"usage",q:"The new regulations will ___ effect next month.",o:["bring","make","take","have"],a:2,e:"Take effect nghĩa là bắt đầu có hiệu lực."},
+          {t:"usage",q:"I need to ___ an appointment with the dentist.",o:["hire","book","borrow","collect"],a:1,e:"Book an appointment nghĩa là đặt lịch hẹn."},
+          {t:"usage",q:"The university is ___ research into renewable energy.",o:["conducting","performing","operating","practising"],a:0,e:"Conduct research là tiến hành nghiên cứu."},
+          {t:"usage",q:"She apologized ___ arriving late.",o:["about","with","at","for"],a:3,e:"Động từ apologize đi với for trước nguyên nhân hoặc hành động."},
+          {t:"usage",q:"This medicine may cause unwanted side ___.",o:["results","effects","outcomes","events"],a:1,e:"Side effects nghĩa là tác dụng phụ của thuốc hoặc phương pháp điều trị."},
+          {t:"collocation",q:"Choose the word that completes the common combination: “a ___ range”.",o:["large","long","wide","full"],a:2,e:"A wide range nghĩa là một phạm vi hoặc nhiều loại đa dạng."},
+          {t:"collocation",q:"Choose the word that completes the common combination: “___ awareness”.",o:["raise","lift","grow","rise"],a:0,e:"Raise awareness nghĩa là nâng cao nhận thức."},
+          {t:"collocation",q:"Choose the word that completes the common combination: “___ connected”.",o:["deeply","closely","heavily","highly"],a:1,e:"Closely connected nghĩa là có mối liên hệ chặt chẽ."},
+          {t:"collocation",q:"Choose the word that completes the common combination: “___ aware”.",o:["greatly","deeply","widely","fully"],a:3,e:"Fully aware nghĩa là hoàn toàn nhận thức hoặc hiểu rõ."},
+          {t:"collocation",q:"Choose the word that completes the common combination: “___ concern”.",o:["strict","rough","serious","hard"],a:2,e:"Serious concern nghĩa là mối lo ngại nghiêm trọng."}
+        ]
+      },
+      {
+        title: "Change & Results",
+        subtitle: "Consumers · growth · analysis",
+        questions: [
+          {t:"definition",q:"Which word means “a person who buys goods or services”?",o:["consumer","producer","employer","supplier"],a:0,e:"Consumer là người tiêu dùng, người mua hàng hóa hoặc dịch vụ."},
+          {t:"definition",q:"Which word describes someone who is careful to avoid danger or mistakes?",o:["confident","cautious","creative","cheerful"],a:1,e:"Cautious nghĩa là thận trọng để tránh nguy hiểm hoặc sai sót."},
+          {t:"definition",q:"Which word means “to provide something that is needed”?",o:["demand","replace","supply","request"],a:2,e:"Supply nghĩa là cung cấp thứ đang cần."},
+          {t:"definition",q:"Which word means “a small change made to improve something”?",o:["achievement","argument","announcement","adjustment"],a:3,e:"Adjustment là sự điều chỉnh nhỏ nhằm cải thiện hoặc làm phù hợp hơn."},
+          {t:"definition",q:"Which word means “the ability to recover quickly after difficulty”?",o:["resilience","resistance","relevance","reliance"],a:0,e:"Resilience là khả năng phục hồi sau khó khăn hoặc biến cố."},
+          {t:"synonym",q:"Choose the word closest in meaning to “vital”.",o:["formal","essential","popular","ordinary"],a:1,e:"Vital và essential đều có nghĩa là vô cùng cần thiết."},
+          {t:"synonym",q:"Choose the word closest in meaning to “decline” when talking about numbers.",o:["combine","remain","decrease","appear"],a:2,e:"Trong ngữ cảnh số liệu, decline và decrease đều có nghĩa là giảm."},
+          {t:"synonym",q:"Choose the word closest in meaning to “flexible”.",o:["valuable","powerful","suitable","adaptable"],a:3,e:"Flexible và adaptable đều chỉ khả năng thích nghi hoặc thay đổi dễ dàng."},
+          {t:"synonym",q:"Choose the word closest in meaning to “complex”.",o:["complicated","comfortable","complete","competitive"],a:0,e:"Complex và complicated đều có nghĩa là phức tạp."},
+          {t:"synonym",q:"Choose the word closest in meaning to “brief”.",o:["wide","short","slow","quiet"],a:1,e:"Brief và short đều diễn tả điều ngắn gọn hoặc kéo dài ít lâu."},
+          {t:"usage",q:"The survey results ___ that most customers are satisfied.",o:["repeat","prevent","indicate","avoid"],a:2,e:"Indicate nghĩa là cho thấy hoặc chỉ ra; phù hợp khi nói về kết quả khảo sát."},
+          {t:"usage",q:"She ___ a very good impression at the interview.",o:["made","did","gave","took"],a:0,e:"Make a good impression nghĩa là tạo ấn tượng tốt."},
+          {t:"usage",q:"We must ___ the problem before it becomes more serious.",o:["attend","address","arrange","admit"],a:1,e:"Address a problem nghĩa là xem xét và xử lý một vấn đề."},
+          {t:"usage",q:"He is responsible ___ managing the sales team.",o:["of","with","to","for"],a:3,e:"Responsible for là cấu trúc đúng để nói chịu trách nhiệm về việc gì."},
+          {t:"usage",q:"Online sales have ___ steadily over the past year.",o:["increased","raised","lifted","enlarged"],a:0,e:"Sales increase: doanh số tăng. Increased là nội động từ phù hợp ở đây."},
+          {t:"collocation",q:"Choose the word that completes the common combination: “___ concerned”.",o:["strictly","deeply","widely","closely"],a:1,e:"Deeply concerned nghĩa là vô cùng lo ngại."},
+          {t:"collocation",q:"Choose the word that completes the common combination: “___ competitive”.",o:["strongly","fully","highly","deeply"],a:2,e:"Highly competitive nghĩa là có tính cạnh tranh rất cao."},
+          {t:"collocation",q:"Choose the word that completes the common combination: “___ a threat”.",o:["set","do","take","pose"],a:3,e:"Pose a threat nghĩa là tạo ra hoặc gây nên một mối đe dọa."},
+          {t:"collocation",q:"Choose the word that completes the common combination: “___ a conclusion”.",o:["draw","paint","pull","mark"],a:0,e:"Draw a conclusion nghĩa là rút ra kết luận."},
+          {t:"collocation",q:"Choose the word that completes the common combination: “___ available”.",o:["deeply","widely","strongly","closely"],a:1,e:"Widely available nghĩa là có sẵn hoặc được cung cấp rộng rãi."}
+        ]
+      },
+      {
+        title: "Problems & Solutions",
+        subtitle: "Inspection · proposals · teamwork",
+        questions: [
+          {t:"definition",q:"Which word means “to examine something carefully”?",o:["inspect","ignore","involve","impress"],a:0,e:"Inspect nghĩa là kiểm tra hoặc xem xét kỹ lưỡng."},
+          {t:"definition",q:"Which word means “a disadvantage or negative aspect of something”?",o:["benefit","drawback","feature","purpose"],a:1,e:"Drawback là nhược điểm hoặc mặt bất lợi."},
+          {t:"definition",q:"Which word describes an idea that is reasonable and practical?",o:["sudden","severe","sensible","separate"],a:2,e:"Sensible nghĩa là hợp lý và thực tế."},
+          {t:"definition",q:"Which word means “an unexpected dangerous situation needing immediate action”?",o:["opportunity","experience","arrangement","emergency"],a:3,e:"Emergency là tình huống khẩn cấp cần hành động ngay."},
+          {t:"definition",q:"Which word means “to say firmly that something must happen or is true”?",o:["insist","invite","intend","inform"],a:0,e:"Insist nghĩa là khăng khăng hoặc nhấn mạnh một cách kiên quyết."},
+          {t:"synonym",q:"Choose the word closest in meaning to “maintain”.",o:["destroy","keep","remove","ignore"],a:1,e:"Maintain và keep đều có thể mang nghĩa duy trì một tình trạng."},
+          {t:"synonym",q:"Choose the word closest in meaning to “reluctant”.",o:["excited","prepared","unwilling","certain"],a:2,e:"Reluctant và unwilling đều chỉ sự không sẵn lòng làm gì."},
+          {t:"synonym",q:"Choose the word closest in meaning to “significant”.",o:["private","similar","possible","important"],a:3,e:"Significant và important đều có nghĩa là quan trọng hoặc đáng kể."},
+          {t:"synonym",q:"Choose the word closest in meaning to “vacant”.",o:["empty","active","public","modern"],a:0,e:"Vacant và empty đều có thể chỉ chỗ trống hoặc không có người sử dụng."},
+          {t:"synonym",q:"Choose the word closest in meaning to “obtain”.",o:["offer","acquire","divide","protect"],a:1,e:"Obtain và acquire đều có nghĩa là đạt được hoặc có được."},
+          {t:"usage",q:"The committee will ___ the proposal at tomorrow’s meeting.",o:["create","connect","consider","contain"],a:2,e:"Consider a proposal nghĩa là xem xét một đề xuất."},
+          {t:"usage",q:"The course aims to ___ students’ communication skills.",o:["improve","increase","rise","grow"],a:0,e:"Improve skills nghĩa là cải thiện kỹ năng."},
+          {t:"usage",q:"Several trains were ___ by engineering work.",o:["cancelled","delayed","escaped","missed"],a:1,e:"Trains were delayed nghĩa là các chuyến tàu bị chậm; engineering work nêu nguyên nhân."},
+          {t:"usage",q:"All staff were made ___ of the new security rules.",o:["known","familiar","conscious","aware"],a:3,e:"Be made aware of nghĩa là được thông báo hoặc giúp nhận thức về điều gì."},
+          {t:"usage",q:"The manager ___ us permission to leave early.",o:["granted","borrowed","offered","delivered"],a:0,e:"Grant permission nghĩa là chính thức cho phép."},
+          {t:"collocation",q:"Choose the word that completes the common combination: “___ an effort”.",o:["do","make","set","put"],a:1,e:"Make an effort nghĩa là nỗ lực."},
+          {t:"collocation",q:"Choose the word that completes the common combination: “___ in mind”.",o:["take","hold","bear","carry"],a:2,e:"Bear in mind nghĩa là ghi nhớ hoặc lưu ý."},
+          {t:"collocation",q:"Choose the word that completes the common combination: “___ part”.",o:["make","do","have","take"],a:3,e:"Take part nghĩa là tham gia."},
+          {t:"collocation",q:"Choose the word that completes the common combination: “___ an agreement”.",o:["reach","arrive","achieve","receive"],a:0,e:"Reach an agreement nghĩa là đạt được thỏa thuận."},
+          {t:"collocation",q:"Choose the word that completes the common combination: “___ opposed”.",o:["highly","strongly","widely","fully"],a:1,e:"Strongly opposed nghĩa là phản đối mạnh mẽ."}
+        ]
+      },
+      {
+        title: "Exam Challenge",
+        subtitle: "Strategy · impact · advanced combinations",
+        questions: [
+          {t:"definition",q:"Which word means “to deal successfully with a problem or difficulty”?",o:["overcome","overlook","overhear","overturn"],a:0,e:"Overcome nghĩa là vượt qua hoặc xử lý thành công một khó khăn."},
+          {t:"definition",q:"Which word describes something that exists or is happening now?",o:["correct","current","recent","presented"],a:1,e:"Current nghĩa là hiện tại, đang tồn tại hoặc đang diễn ra."},
+          {t:"definition",q:"Which word means “a careful plan designed to achieve a particular aim”?",o:["system","standard","strategy","statement"],a:2,e:"Strategy là chiến lược hoặc kế hoạch được thiết kế để đạt mục tiêu."},
+          {t:"definition",q:"Which word means “to make information publicly known”?",o:["admit","advise","arrange","announce"],a:3,e:"Announce nghĩa là công bố thông tin cho công chúng hoặc một nhóm người."},
+          {t:"definition",q:"Which word describes something that produces the intended result?",o:["effective","efficient","accurate","suitable"],a:0,e:"Effective nghĩa là có hiệu quả, tạo ra kết quả mong muốn."},
+          {t:"synonym",q:"Choose the word closest in meaning to “roughly”.",o:["completely","approximately","immediately","frequently"],a:1,e:"Roughly và approximately đều có nghĩa là xấp xỉ khi nói về con số."},
+          {t:"synonym",q:"Choose the word closest in meaning to “adequate”.",o:["additional","appropriate","sufficient","available"],a:2,e:"Adequate và sufficient đều có nghĩa là đủ cho một mục đích."},
+          {t:"synonym",q:"Choose the word closest in meaning to “forbid”.",o:["encourage","permit","request","prohibit"],a:3,e:"Forbid và prohibit đều có nghĩa là cấm."},
+          {t:"synonym",q:"Choose the word closest in meaning to “diverse”.",o:["varied","limited","equal","similar"],a:0,e:"Diverse và varied đều diễn tả sự đa dạng, có nhiều loại khác nhau."},
+          {t:"synonym",q:"Choose the word closest in meaning to “temporary”.",o:["regular","short-term","complete","separate"],a:1,e:"Temporary và short-term đều chỉ điều chỉ tồn tại trong thời gian ngắn."},
+          {t:"usage",q:"The report ___ attention to several safety problems.",o:["gives","pays","draws","makes"],a:2,e:"Draw attention to nghĩa là thu hút hoặc hướng sự chú ý đến điều gì."},
+          {t:"usage",q:"The success of the project depends ___ continued funding.",o:["on","at","for","with"],a:0,e:"Depend on là cấu trúc đúng, nghĩa là phụ thuộc vào."},
+          {t:"usage",q:"They ___ advantage of the opportunity to expand abroad.",o:["made","took","had","gave"],a:1,e:"Take advantage of nghĩa là tận dụng cơ hội hoặc lợi thế."},
+          {t:"usage",q:"The proposed changes will ___ all employees.",o:["effect","result","influence on","affect"],a:3,e:"Affect là động từ, nghĩa là tác động đến; đứng trực tiếp trước all employees."},
+          {t:"usage",q:"She eventually succeeded ___ finding a practical solution.",o:["in","at","on","for"],a:0,e:"Succeed in doing something là cấu trúc đúng."},
+          {t:"collocation",q:"Choose the word that completes the common combination: “___ beneficial”.",o:["equally","mutually","widely","greatly"],a:1,e:"Mutually beneficial nghĩa là có lợi cho cả hai hoặc tất cả các bên."},
+          {t:"collocation",q:"Choose the word that completes the common combination: “___ impact”.",o:["large","hard","major","deep"],a:2,e:"Major impact nghĩa là tác động lớn hoặc quan trọng."},
+          {t:"collocation",q:"Choose the word that completes the common combination: “___ prohibited”.",o:["deeply","closely","highly","strictly"],a:3,e:"Strictly prohibited nghĩa là bị nghiêm cấm."},
+          {t:"collocation",q:"Choose the word that completes the common combination: “___ available”.",o:["readily","heavily","deeply","strongly"],a:0,e:"Readily available nghĩa là dễ dàng có được hoặc tiếp cận."},
+          {t:"collocation",q:"Choose the word that completes the common combination: “___ unlikely”.",o:["fully","highly","widely","closely"],a:1,e:"Highly unlikely nghĩa là rất khó có khả năng xảy ra."}
+        ]
+      }
+    ];
+
+    const TYPE_LABELS = {
+      definition: "Definition",
+      synonym: "Word pair",
+      usage: "Word usage",
+      collocation: "Combination"
+    };
+
+    const STORAGE_KEY = "pop_aptis_vocab_100_v1";
+    let state = loadState();
+    let currentSet = Number.isInteger(state.currentSet) ? state.currentSet : 0;
+    let mode = "test";
+
+    const navigatorEl = document.getElementById("navigator");
+    const questionList = document.getElementById("questionList");
+    const answerMap = document.getElementById("answerMap");
+    const testView = document.getElementById("testView");
+    const summaryView = document.getElementById("summaryView");
+    const reviewView = document.getElementById("reviewView");
+
+    function loadState() {
+      try {
+        const saved = JSON.parse(localStorage.getItem(STORAGE_KEY));
+        if (saved && Array.isArray(saved.answers) && saved.answers.length === 100) return saved;
+      } catch (error) {}
+      return { answers: Array(100).fill(null), currentSet: 0 };
+    }
+
+    function saveState() {
+      state.currentSet = currentSet;
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+    }
+
+    function flatIndex(setIndex, questionIndex) {
+      return setIndex * 20 + questionIndex;
+    }
+
+    function totals() {
+      let answered = 0;
+      let correct = 0;
+      SETS.forEach(function(set, si) {
+        set.questions.forEach(function(question, qi) {
+          const value = state.answers[flatIndex(si, qi)];
+          if (value !== null) {
+            answered += 1;
+            if (value === question.a) correct += 1;
+          }
+        });
+      });
+      return { answered: answered, correct: correct, wrong: answered - correct, blank: 100 - answered };
+    }
+
+    function setTotals(setIndex) {
+      let answered = 0;
+      let correct = 0;
+      SETS[setIndex].questions.forEach(function(question, qi) {
+        const value = state.answers[flatIndex(setIndex, qi)];
+        if (value !== null) {
+          answered += 1;
+          if (value === question.a) correct += 1;
+        }
+      });
+      return { answered: answered, correct: correct };
+    }
+
+    function renderNavigator() {
+      navigatorEl.innerHTML = "";
+      SETS.forEach(function(set, index) {
+        const score = setTotals(index);
+        const button = document.createElement("button");
+        button.className = "navchip" + (currentSet === index && mode === "test" ? " active" : "");
+        button.type = "button";
+        button.innerHTML = (index + 1) + ". " + set.title + "<small>" + score.correct + "/20 correct · " + score.answered + " done</small>";
+        button.addEventListener("click", function() {
+          currentSet = index;
+          showTest();
+        });
+        navigatorEl.appendChild(button);
+      });
+    }
+
+    function renderQuestion(question, qi) {
+      const index = flatIndex(currentSet, qi);
+      const selected = state.answers[index];
+      const card = document.createElement("article");
+      const status = selected === null ? "" : selected === question.a ? " correct" : " wrong";
+      card.className = "question-card" + status;
+      card.id = "question-" + (index + 1);
+
+      const top = document.createElement("div");
+      top.className = "question-top";
+      top.innerHTML = '<div class="qnum">' + (index + 1) + '</div><div></div><span class="type-tag type-' + question.t + '">' + TYPE_LABELS[question.t] + '</span>';
+
+      const prompt = document.createElement("p");
+      prompt.className = "question";
+      prompt.textContent = question.q;
+
+      const row = document.createElement("div");
+      row.className = "answer-row";
+
+      const select = document.createElement("select");
+      select.className = "answer-select";
+      select.setAttribute("aria-label", "Answer question " + (index + 1));
+      select.innerHTML = '<option value="">Choose the best answer</option>';
+      question.o.forEach(function(option, oi) {
+        const optionEl = document.createElement("option");
+        optionEl.value = String(oi);
+        optionEl.textContent = String.fromCharCode(65 + oi) + " · " + option;
+        if (selected === oi) optionEl.selected = true;
+        select.appendChild(optionEl);
+      });
+      select.addEventListener("change", function() {
+        state.answers[index] = select.value === "" ? null : Number(select.value);
+        saveState();
+        renderAll();
+        const updatedCard = document.getElementById("question-" + (index + 1));
+        if (updatedCard) updatedCard.scrollIntoView({block:"center"});
+      });
+
+      const mark = document.createElement("div");
+      mark.className = "mark";
+      mark.setAttribute("aria-hidden", "true");
+      mark.textContent = selected === question.a ? "✓" : "×";
+
+      row.appendChild(select);
+      row.appendChild(mark);
+
+      const feedback = document.createElement("div");
+      feedback.className = "feedback";
+      if (selected !== null) {
+        const correctText = String.fromCharCode(65 + question.a) + " · " + question.o[question.a];
+        feedback.innerHTML = "<strong>Correct answer: " + correctText + "</strong><br>" + question.e;
+      }
+
+      card.appendChild(top);
+      card.appendChild(prompt);
+      card.appendChild(row);
+      card.appendChild(feedback);
+      return card;
+    }
+
+    function renderQuestions() {
+      const set = SETS[currentSet];
+      const score = setTotals(currentSet);
+      document.getElementById("pageLabel").textContent = "Vocabulary Set " + (currentSet + 1);
+      document.getElementById("pageTitle").textContent = set.title;
+      document.getElementById("pageAnswered").textContent = score.answered + "/20 answered";
+      document.getElementById("miniScore").textContent = score.correct + "/20";
+      questionList.innerHTML = "";
+      set.questions.forEach(function(question, qi) {
+        questionList.appendChild(renderQuestion(question, qi));
+      });
+
+      answerMap.innerHTML = "";
+      set.questions.forEach(function(question, qi) {
+        const selected = state.answers[flatIndex(currentSet, qi)];
+        const dot = document.createElement("div");
+        dot.className = "answer-dot" + (selected === null ? "" : selected === question.a ? " correct" : " wrong");
+        dot.textContent = currentSet * 20 + qi + 1;
+        answerMap.appendChild(dot);
+      });
+
+      document.getElementById("prevPage").disabled = currentSet === 0;
+      document.getElementById("nextPage").textContent = currentSet === SETS.length - 1 ? "Score →" : "Next →";
+    }
+
+    function updateProgress() {
+      const total = totals();
+      document.getElementById("scorePill").textContent = total.correct + "/" + total.answered;
+      document.getElementById("progressText").textContent = total.answered + " / 100";
+      document.getElementById("progressBar").style.width = total.answered + "%";
+    }
+
+    function renderAll() {
+      renderNavigator();
+      renderQuestions();
+      updateProgress();
+    }
+
+    function showTest() {
+      mode = "test";
+      testView.style.display = "block";
+      summaryView.classList.remove("active");
+      reviewView.classList.remove("active");
+      renderAll();
+      window.scrollTo({top: document.getElementById("navigator").offsetTop - 100, behavior:"smooth"});
+    }
+
+    function showSummary() {
+      mode = "summary";
+      testView.style.display = "none";
+      reviewView.classList.remove("active");
+      summaryView.classList.add("active");
+      renderNavigator();
+      updateProgress();
+      const total = totals();
+      const percent = total.correct;
+      let message = "Build the foundation";
+      let description = "Bạn đang xây nền từ vựng. Hãy xem lại câu sai, ghi cả cụm từ thay vì chỉ ghi từng từ riêng lẻ.";
+      if (percent >= 85) {
+        message = "Excellent control";
+        description = "Bạn xử lý rất tốt vốn từ B1–B2 trong bài luyện này. Hãy tiếp tục luyện theo thời gian giới hạn để tăng tốc độ.";
+      } else if (percent >= 70) {
+        message = "Strong progress";
+        description = "Nền từ vựng khá chắc. Hãy xem lại các cụm từ cố định và những câu sai do ngữ cảnh.";
+      } else if (percent >= 50) {
+        message = "Good momentum";
+        description = "Bạn đã có nền tảng phù hợp. Ôn lại word pairs và collocations sẽ giúp điểm tăng nhanh nhất.";
+      }
+      document.getElementById("bigScore").textContent = total.correct + "/100";
+      document.getElementById("scoreMessage").textContent = message;
+      document.getElementById("scoreDescription").textContent = description;
+      document.getElementById("correctStat").textContent = total.correct;
+      document.getElementById("wrongStat").textContent = total.wrong;
+      document.getElementById("blankStat").textContent = total.blank;
+      window.scrollTo({top: document.getElementById("navigator").offsetTop - 100, behavior:"smooth"});
+    }
+
+    function showReview() {
+      mode = "review";
+      summaryView.classList.remove("active");
+      reviewView.classList.add("active");
+      renderNavigator();
+      const list = document.getElementById("reviewList");
+      list.innerHTML = "";
+      let count = 0;
+      SETS.forEach(function(set, si) {
+        set.questions.forEach(function(question, qi) {
+          const selected = state.answers[flatIndex(si, qi)];
+          if (selected !== question.a) {
+            count += 1;
+            const item = document.createElement("article");
+            item.className = "review-item";
+            const yourAnswer = selected === null ? "Unanswered" : String.fromCharCode(65 + selected) + " · " + question.o[selected];
+            const rightAnswer = String.fromCharCode(65 + question.a) + " · " + question.o[question.a];
+            item.innerHTML = "<h4>Q" + (flatIndex(si, qi) + 1) + ". " + question.q + "</h4><p><strong>Your answer:</strong> " + yourAnswer + "</p><p><strong>Correct answer:</strong> " + rightAnswer + "</p><p>" + question.e + "</p>";
+            list.appendChild(item);
+          }
+        });
+      });
+      if (!count) {
+        const item = document.createElement("article");
+        item.className = "review-item";
+        item.innerHTML = "<h4>Perfect score.</h4><p>Không có câu sai hoặc bỏ trống để xem lại.</p>";
+        list.appendChild(item);
+      }
+      window.scrollTo({top: document.getElementById("navigator").offsetTop - 100, behavior:"smooth"});
+    }
+
+    function movePage(direction) {
+      if (mode !== "test") {
+        showTest();
+        return;
+      }
+      const next = currentSet + direction;
+      if (next >= 0 && next < SETS.length) {
+        currentSet = next;
+        saveState();
+        showTest();
+      } else if (direction > 0) {
+        showSummary();
+      }
+    }
+
+    document.getElementById("prevPage").addEventListener("click", function() { movePage(-1); });
+    document.getElementById("nextPage").addEventListener("click", function() { movePage(1); });
+    document.getElementById("dockPrev").addEventListener("click", function() { movePage(-1); });
+    document.getElementById("dockNext").addEventListener("click", function() { movePage(1); });
+    document.getElementById("dockScore").addEventListener("click", showSummary);
+    document.getElementById("backToTest").addEventListener("click", showTest);
+    document.getElementById("reviewWrong").addEventListener("click", showReview);
+    document.getElementById("reviewBack").addEventListener("click", showSummary);
+
+    document.getElementById("resetPage").addEventListener("click", function() {
+      const start = currentSet * 20;
+      for (let i = start; i < start + 20; i += 1) state.answers[i] = null;
+      saveState();
+      renderAll();
+      window.scrollTo({top: document.getElementById("questionList").offsetTop - 90, behavior:"smooth"});
+    });
+
+    document.getElementById("resetAll").addEventListener("click", function() {
+      state.answers = Array(100).fill(null);
+      currentSet = 0;
+      saveState();
+      showTest();
+    });
+
+    renderAll();
+  </script>
+</body>
+</html>
